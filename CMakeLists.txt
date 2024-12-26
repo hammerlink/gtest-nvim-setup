@@ -22,8 +22,11 @@ enable_testing()
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
+# Add source directories
+include_directories(${CMAKE_SOURCE_DIR}/src)
+
 # Add executable
-add_executable(test_main test_main.cpp)
+add_executable(test_main src/test_main.cpp)
 target_link_libraries(test_main GTest::GTest GTest::Main)
 
 include(GoogleTest)
