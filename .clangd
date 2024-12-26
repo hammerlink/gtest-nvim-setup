@@ -1,0 +1,5 @@
+CompileFlags:
+  Add: [-Wall, -Wextra]
+  Remove: [-W*, -D*]
+Index:
+  Background: Build
